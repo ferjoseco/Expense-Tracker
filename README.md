@@ -22,13 +22,6 @@ This Expense Tracker helps businesses and individuals monitor their spending thr
 - Seaborn - Enhanced chart styling
 - NumPy - Mathematical operations
 
-## Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/ferjoseco/Expense-Tracker.git
-cd Expense-Tracker
-
 ## Usage
 
 The application provides a menu-driven interface with the following options:
@@ -64,3 +57,11 @@ The application provides a menu-driven interface with the following options:
 - **ID Existence Confirmation**: Verifies expense IDs exist before editing/deleting
 - **Menu Input Protection**: Handles invalid menu selections gracefully
 - **Database Integrity**: Maintains data consistency during all operations
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/ferjoseco/Expense-Tracker.git
+cd Expense-Tracker
+
