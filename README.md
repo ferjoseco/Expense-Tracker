@@ -28,3 +28,74 @@ This Expense Tracker helps businesses and individuals monitor their spending thr
 ```bash
 git clone https://github.com/ferjoseco/Expense-Tracker.git
 cd Expense-Tracker
+
+**## Usage
+**The application provides a menu-driven interface with the following options:
+
+Add Expense - Record new expenses with amount, category, and date
+
+Edit Expense - Modify existing expense records
+
+Delete Expense - Remove expenses from the database
+
+View Expenses - Display all recorded expenses in table format
+
+Bar Chart - Visualize expenses by category as a bar graph
+
+Pie Chart - Show expense distribution as a pie chart
+
+Exit - Close the application
+
+Expense Categories
+Overhead - Operational costs
+
+Salaries - Employee compensation
+
+Marketing - Advertising and promotion
+
+Low Expense - Automatic classification for amounts under 100
+
+Database Schema
+The SQLite database uses a simple table structure:
+
+sql
+expenses (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    amount INTEGER NOT NULL,
+    category TEXT NOT NULL,
+    date TEXT NOT NULL
+)
+Visual Features
+Bar Charts: Category-wise expense comparison in "Shrek green" (#B0C400)
+
+Pie Charts: Expense distribution with HSV color palette
+
+Interactive Display: Non-blocking charts for seamless workflow
+
+Error Handling
+Input validation for numerical values
+
+Category verification
+
+Date format checking
+
+Expense ID existence confirmation
+
+Project Structure
+text
+Expense-Tracker/
+├── Final_Version_Expense_Tracker.ipynb
+├── expenses.db (created automatically)
+└── README.md
+License
+This project is open source and available under the MIT License.
+
+Developed by Fernando Cabrera - Data Science & Business Analytics
+
+text
+
+*To use this README file:*
+1. *Copy the entire content above*
+2. *Create a new file named `README.md` in your project folder*
+3. *Paste the copied content*
+4. *Save and commit to your GitHub repository*
