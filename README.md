@@ -29,73 +29,38 @@ This Expense Tracker helps businesses and individuals monitor their spending thr
 git clone https://github.com/ferjoseco/Expense-Tracker.git
 cd Expense-Tracker
 
-**## Usage
-**The application provides a menu-driven interface with the following options:
+## Usage
 
-Add Expense - Record new expenses with amount, category, and date
+The application provides a menu-driven interface with the following options:
 
-Edit Expense - Modify existing expense records
+1. **Add Expense** - Record new expenses with amount, category, and date
+2. **Edit Expense** - Modify existing expense records
+3. **Delete Expense** - Remove expenses from the database
+4. **View Expenses** - Display all recorded expenses in table format
+5. **Bar Chart** - Visualize expenses by category as a bar graph
+6. **Pie Chart** - Show expense distribution as a pie chart
+7. **Exit** - Close the application
 
-Delete Expense - Remove expenses from the database
+## Expense Categories
 
-View Expenses - Display all recorded expenses in table format
+- **Overhead** - Operational costs and general business expenses
+- **Salaries** - Employee compensation and payroll expenses
+- **Marketing** - Advertising, promotion, and campaign costs
+- **Low Expense** - Automatic classification for amounts under 100 units
 
-Bar Chart - Visualize expenses by category as a bar graph
+## Visual Features
 
-Pie Chart - Show expense distribution as a pie chart
+- **Bar Charts**: Category-wise expense comparison displayed in "Shrek green" (#B0C400)
+- **Pie Charts**: Expense distribution visualization using HSV color palette
+- **Interactive Display**: Non-blocking charts that allow continuous program usage
+- **Automatic Percentage Labels**: Pie charts display exact percentage distributions
+- **Professional Styling**: Clean, readable charts with proper titles and labels
 
-Exit - Close the application
+## Error Handling
 
-Expense Categories
-Overhead - Operational costs
-
-Salaries - Employee compensation
-
-Marketing - Advertising and promotion
-
-Low Expense - Automatic classification for amounts under 100
-
-Database Schema
-The SQLite database uses a simple table structure:
-
-sql
-expenses (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    amount INTEGER NOT NULL,
-    category TEXT NOT NULL,
-    date TEXT NOT NULL
-)
-Visual Features
-Bar Charts: Category-wise expense comparison in "Shrek green" (#B0C400)
-
-Pie Charts: Expense distribution with HSV color palette
-
-Interactive Display: Non-blocking charts for seamless workflow
-
-Error Handling
-Input validation for numerical values
-
-Category verification
-
-Date format checking
-
-Expense ID existence confirmation
-
-Project Structure
-text
-Expense-Tracker/
-├── Final_Version_Expense_Tracker.ipynb
-├── expenses.db (created automatically)
-└── README.md
-License
-This project is open source and available under the MIT License.
-
-Developed by Fernando Cabrera - Data Science & Business Analytics
-
-text
-
-*To use this README file:*
-1. *Copy the entire content above*
-2. *Create a new file named `README.md` in your project folder*
-3. *Paste the copied content*
-4. *Save and commit to your GitHub repository*
+- **Input Validation**: Ensures numerical values for amounts and IDs
+- **Category Verification**: Validates expense categories against approved list
+- **Date Format Checking**: Confirms proper date format (YYYY-MM-DD)
+- **ID Existence Confirmation**: Verifies expense IDs exist before editing/deleting
+- **Menu Input Protection**: Handles invalid menu selections gracefully
+- **Database Integrity**: Maintains data consistency during all operations
